@@ -1,0 +1,50 @@
+/* Specificity scale
+
+Tags start here (LEAST SPECIFIC: can be overridden by IDs and classes) */
+body {
+    background-image: url("https://www.serebii.net/pokearth/maps/hoenn-em/2.png");
+}
+
+h1, h2, h3, p, li {
+    font-family: Arial;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Classes start here (MIDDLE MAN: can override tags and be overridden by IDs */
+.bold {
+    font-weight: bold;
+}
+
+/* .nav-list li {
+
+} */
+
+/* IDs start here (MOST SPECIFIC: overrides everything, cannot be overridden by anything except the !important attribute) */
+
+#header, #whatis, #features, #meetthedevs, #download, #media {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background: rgba(0, 0, 0, 0.8);
+}
+#whatis, #features, #meetthedevs, #download, #media {
+    text-align: center;
+}
+
+#nav {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 25%;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
